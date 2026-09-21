@@ -1,0 +1,287 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f7f2;
+    color: #12372a;
+}
+header{
+    position: sticky;
+    
+}
+
+body:hover{
+    header,.header-content{
+        top:0;
+        padding: 0;
+        gap: 0;
+        text-shadow: 2px 2px 0px white;
+        font-weight: 700;
+        
+    }
+    header{
+        background-color: rgb(250, 235, 215,0.9);
+        border-radius: 5px;
+        transition: all 1s;
+        
+    }
+    .main-iframe{
+        height: 87vh;
+    }
+}
+.container
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.site-header
+{
+    background-color: white;
+    padding: 20px 0;
+    
+}
+
+.header-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 28px;
+    /* font-size: 28px; */
+    white-space: nowrap;
+}
+
+.Logo img
+{
+    width: 35px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.fresh-word
+{
+    color: #075b3b;
+}
+.juice-word
+{
+    color: #f7931e;
+}
+
+.main-iframe{
+    border: 2px solid;
+    height:75vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.main-nav
+{
+    display: flex;
+    gap: 35px;
+}
+
+.main-nav a
+{
+    color: #12372a;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.main-nav a:hover
+{
+    color: #f7931e;
+}
+
+.samll-title
+{
+    color: #315c49;
+    font-size: 18px;
+    margin: 20px 0 25px;
+}
+
+/* Hero Section*/
+.hero-section
+{
+    background-image: url(Images/hero-background.png);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+}
+
+.hero-content
+{
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.hero-text h1 span
+{
+    display: block;
+    color: #f7931e;
+}
+
+.samll-title span
+{
+    color: #075b3b;
+    margin: 0 8px;
+}
+
+.hero-text
+{
+    padding-left: 100px;
+    
+}
+
+.main-button
+{
+    display: inline-block;
+    background-color: #075b3b;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-button:hover
+{
+    background-color: #f7931e;
+}
+
+.main-button span
+{
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.menu-section
+{
+    min-height: 250;
+    padding: 70px 0;
+    /* background-color: #e9f3df; */
+}
+
+.about-section
+{
+    min-height: 250px;
+    padding: 70px 0;
+    background-color: #e9f3df;
+}
+
+@media (max-width:768px)
+{
+ .header-content
+{
+        flex-direction: column;
+        gap: 20px;
+        
+}
+
+.main-nav
+{
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav a
+{
+    font-size: 14px;
+}
+
+.hero-section
+{
+    min-height: 500px;
+    background-position: center;
+    
+}
+
+.hero-content
+{
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text
+{
+    width: 100%;
+}
+
+.hero-text h1
+{
+    font-size: 42px;
+}
+
+}
+@media (max-width: 230px){
+    
+    .main-nav
+    {
+        gap: 7px;
+    }
+
+    .main-nav a
+    {
+        
+        font-size: 12px;
+    }
+    .hero-section
+    {
+        background-image: url(Images/hero-background.png);
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 70px 0;
+        
+        justify-content: center;
+    }
+    
+    .hero-text
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1px;
+        justify-content: center;
+        
+    }
+     .samll-title , .main-button{
+        font-size: 10px;
+    } 
+    .main-button{
+        
+        padding: 3px 0;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .samll-title{
+        font-weight: 700;
+        text-shadow: 1px 1px 1px rgb(148, 234, 133);
+    }
+
+}
+
