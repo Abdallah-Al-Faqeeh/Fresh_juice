@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <main>
+            <section id="home" class="hero-section">
+
+             <div class="container hero-content">
+                   <div class="hero-text">
+                    <h1>
+                        Fresh Juice,<br>
+                        <span>Fresh Mood!</span>
+                    </h1>
+                     <p class="samll-title">
+                        Natural <span>•</span> Fresh
+                        <span>•</span> Delicious
+                    </p>
+                    <a href="#menu" class="main-button">
+                    View Menu <span> →</span></a>
+                </div>
+                </div>
+            </section>
+
+
+            <section id="menu" class="menu-section">
+            </section>
+            <script>
+                function loadPage(event){
+                    event.preventDefault();
+                    const url = event.target.href;
+                    fetch(url).then(Response => Response.text()).then(data => {document.getElementById("menu").innerHTML = data;});
+                }
+                loadPage({
+                    preventDefault: () => {},
+                    target: {href:"/المشروع/المشروع/index.html"}
+                })
+            </script>
+            <!-- <section id="about" class="about-section">
+
+            </section> -->
+            <a href=""></a>
+
+            <section id="contact" class="contact-section">
+
+            </section>
+
+        </main>
+</body>
+</html>
