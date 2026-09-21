@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/0/المشروع/style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #juices{
+    text-align: center;
+    margin: 20px;
+}
+body{
+    background-image: url("./../Project Juice/Images/hero-background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+   
+}
+.juice-container{
+    display: flex;
+    flex-direction: row;
+    flex-flow:nowrap;
+    width: 100%;
+    /* border: 2px solid red; */
+    /* juice-container: center; */
+    /* gap: 20px; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    align-content: center;
+    float: left;
+    /* align-items: center; */
+    
+    border-radius: 15px;
+
+}
+.juice-card{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    
+    border: 2px solid green;
+    background-color:white ;
+    border-radius: 15px;
+}
+.juice-card img{
+    width: 100px;
+    float: inline-end;
+    
+    height: 30%;
+}
+.juice-card h3{
+    color: green;
+}
+.juice-card p{
+font-weight: bold;
+}
+.juice-card button{
+background-color: orange;
+color: wheat;
+border: none;
+padding: 8px 15px;
+border-radius: 5px;
+}
+.juice-card button:hover{
+    background-color: rgb(213, 148, 26);
+    cursor: pointer;
+}
+@media(max-width: 590px){
+    .juice-container{
+        flex-direction: column;
+        justify-content: center;
+        flex-flow: wrap;
+        height: 1200px;
+        background-color: rgb(242, 169, 138, 0.5);
+        
+    }
+    .juice-card{
+       display: grid;
+       width: 100%;
+       height: 20%;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       background-color: rgb(234, 239, 179);
+    }
+    .juice-card img{
+        grid-row: 1/4;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+    }
+    .juice-card button{
+        width: 80%;
+        margin: auto;
+        height: 50px;
+        border-radius: 20px;
+        font-weight: 700;
+        text-shadow: -1px -1px 1px rgb(254, 2, 2);
+    }
+    .juice-card h3{
+        text-shadow: -1px -1px 0 rgb(218, 165, 165);
+    }
+    .juice-card p{
+        text-shadow: -1px -1px 1px red;;
+    }
+
+}
+@media(max-width:230px){
+    .juice-card img{
+        grid-column: 1/3;
+    }.juice-card button{
+        grid-column: 1/3;
+        font-size: 12px;
+    }
+    .juice-card p , h3{
+        font-size: 14px;
+    }
+    .juice-card h3{
+        padding-right: 5px;
+    }
+}
+
+</style>
+</head>
+<body >
+    <section id="juices">
+        <h2 style="text-shadow: 1px 1px 1px green ; ">Our Juices</h2>
+        <p style="font-weight: 700; text-shadow: -2px -1px 0px rgb(244, 239, 239); color: rgb(18, 23, 16);">Choose your favorite fresh juce</p>
+   
+
+     <div class="juice-container">
+        <div class="juice-card" style="border: 2px solid green;">
+            <img src="/المشروع/المشروع/Orange_Juice.jpg" alt="Orange Juice">
+            <h3>Orange Juice</h3>
+            <p>1000 RY</p>
+            <button>Order Now</button>
+        </div>
+        <div class="juice-card">
+            <img src="/المشروع/المشروع/Strawberry_Juice.jpg" alt="Strawberry Juice">
+            <h3>Strawberry Juice</h3>
+            <p>1300 RY</p>
+             <button>Order Now</button>
+        </div>
+            <div class="juice-card">
+                <img src="/المشروع/المشروع/Mango_Juice.jpg" alt="Mango Juice">
+                <h3>Mango Juice</h3>
+                <p>1300 RY</p>
+                 <button>Order Now</button>
+            </div>
+                <div class="juice-card">
+                    <img src="/المشروع/المشروع/Watermelon_Juice.jpg" alt="Watermelon Juice">
+                    <h3>Watermelon Juice</h3>
+                    <p>1000 RY</p>
+                     <button>Order Now</button>
+                </div>
+     </div>
+     </section>
+</body>
+</html>
+</body>
+</html>
