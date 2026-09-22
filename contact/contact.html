@@ -1,0 +1,215 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+    
+        *{
+            box-sizing: border-box;
+            min-height: 0;
+        }
+
+        /* التذييل */
+        .footer {
+            background-color: #064b3b;
+            color: white;
+            /* padding: 25px 8% 15px; */
+            height: auto;
+        }
+
+        /* الجزء العلوي من التذييل */
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        /* الشعار */
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo-icon {
+            font-size: 25px;
+        }
+        @media(max-width:320px){
+            .footer-logo {
+                
+                gap: 5px;
+            }
+            .footer-top{
+                gap: 15px;
+            }
+            
+            
+        }
+
+        .footer-logo p {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .footer-logo p span {
+            color: #f6a800;
+        }
+
+        .footer-logo p {
+            margin: 3px 0 0;
+            font-size: 13px;
+            color: #d7e8df;
+        }
+
+        /* معلومات الاتصال */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .contact-info div {
+            display: flex;
+            /* flex-direction: row; */
+            align-items: center;
+            gap: 5px;
+        }
+        .Box{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .contact-icon {
+            font-size: 18px;
+            direction: rtl;
+            display: inline;
+            /* border: 2px solid; */
+        }
+
+        /* مواقع التواصل */
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            font-size: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #f6a800;
+        }
+
+        /* الخط الفاصل */
+        .footer-line {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            margin: 15px 0 10px;
+        }
+
+    
+
+       
+       
+
+            .footer-top {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-logo {
+                flex-direction: column;
+            }
+
+            .contact-info div {
+                justify-content: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        
+        
+    </style>
+</head>
+
+
+    <div class="footer" >
+
+        <div class="footer-top">
+
+            <!-- الشعار -->
+            <div class="footer-logo">
+
+                <div>
+                    <p style="font-size: large;">
+                        <span class="footer-logo-icon">🥤</span>Fresh <span>Juice</span>
+                    </p>
+
+                    <p>Freshness in every sip</p>
+                </div>
+
+            </div>
+
+
+            <!-- معلومات الاتصال -->
+            <div class="contact-info">
+                <p dir="rtl" style="font-weight: 700; text-shadow: 1px 1px 0 red;">للتواصل عبر : </p>
+                <div class="Box">
+                    <div class="contact-icon">📞 الهاتف :</div>
+                    <a href="Tel:+967784461598" dir="rtl" style="color: antiquewhite;">عبدالله زيد الفقيه </a>
+                    <span>,</span>
+                    <a href="Tel:+967771737072" dir="rtl" style="color: antiquewhite;"> عبدالعزيز بشير  </a>
+                    <span>,</span>
+                    <a href="Tel:+967739987452" dir="rtl" style="color: antiquewhite;"> عبدالله مرشد</a>
+                    <span>,</span>
+                    <a href="Tel:+967772002504" dir="rtl" style="color: antiquewhite;"> بسام بادي</a>
+                </div>
+
+                <div class="Box">
+                    <p style="font-size: 18px;">✉ الايميل</p>
+                    <a href="mailto:abood1234@gmail.com" target="_blank" style="color: antiquewhite;"> alfakih.115.sy@gmail.com                  </a>
+                </div>
+
+            </div>
+
+
+            <!-- مواقع التواصل -->
+            <div class="social-icons">
+                
+                <a href="Tel:+967784461598" target="_blank">
+                    <img src="image-web/telegram.png" alt="telegram" style="width: 2em; height: 2em; border-radius: 50%;"></a>
+
+
+            <a href="https://www.whatsapp.com" target="_blank">
+                <img src="image-web/whatsapp png.png" alt="WHATS" style="width: 2em; height: 2em;  border-radius: 50%;"></a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="image-web/facebook.png" alt="FACEBOOK" style="width: 2em; height: 2em;border-radius: 50%"></a>
+
+            </div>
+
+        </div>
+
+
+        <!-- الخط الفاصل -->
+        <hr class="footer-line">
+
+    </div>
+
+
+
+
