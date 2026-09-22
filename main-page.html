@@ -57,10 +57,20 @@
                     target: {href:"./Menu/index.html"}
                 })
             </script>
-            <section id="about" class="about-section">
+            <section id="about_us" class="about-section">
 
             </section>
-            
+            <script>
+                function loadPage(event){
+                    event.preventDefault();
+                    const url = event.target.href;
+                    fetch(url).then(Response => Response.text()).then(data => {document.getElementById("about_us").innerHTML = data;});
+                }
+                loadPage({
+                    preventDefault: () => {},
+                    target: {href:"./about_us/about_us.html"}
+                })
+            </script>
             <section id="contact" class="contact-section">
 
             </section>
